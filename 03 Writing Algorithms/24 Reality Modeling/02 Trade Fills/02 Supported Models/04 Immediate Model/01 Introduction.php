@@ -1,8 +1,10 @@
 <p>The <code>ImmediateFillModel</code> is the default fill model if you trade non-Equity assets with the <a href="/docs/v2/writing-algorithms/reality-modeling/brokerages/supported-models/quantconnect-paper-trading">DefaultBrokerageModel</a>. This fill model fills trades completely and immediately. <br></p>
 
 <div class="section-example-container">
-<pre class="csharp">security.SetFillModel(new ImmediateFillModel());</pre>
-<pre class="python">security.set_fill_model(ImmediateFillModel())</pre>
+<pre class="csharp">// Fill non-equity trades immediately with ImmediateFillModel.
+security.SetFillModel(new ImmediateFillModel());</pre>
+<pre class="python"># Fill non-equity trades immediately with ImmediateFillModel.
+security.set_fill_model(ImmediateFillModel())</pre>
 </div>
 
 <?php echo file_get_contents(DOCS_RESOURCES."/reality-modeling/trade-fills/immediate-fill-model-fill-logic.html"); ?>

@@ -1,9 +1,9 @@
 <p>The brokerage model of your algorithm automatically sets the fill model for each security, but you can override it. To manually set the fill model of a security, call the <code class="csharp">SetFillModel</code><code class="python">set_fill_model</code> method on the Security object.</p>
 <div class="section-example-container">
-    <pre class="csharp">// In Initialize
+    <pre class="csharp">// Override the default fill model. Now the model will fill trades immediately and completely.
 var security = AddEquity("SPY");
 security.SetFillModel(new ImmediateFillModel());</pre>
-    <pre class="python"># In Initialize
+    <pre class="python"># Override the default fill model. Now the model will fill trades immediately and completely.
 security = self.add_equity("SPY")
 security.set_fill_model(ImmediateFillModel())</pre>
 </div>
